@@ -4,7 +4,6 @@ import kg.itacademy.OnlineOrderUser.exeption.NotFoundException;
 import kg.itacademy.OnlineOrderUser.model.MenuModel;
 import kg.itacademy.OnlineOrderUser.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -17,7 +16,7 @@ public class UserController {
     @Autowired
     private UserService adminServise;
 
-    @PostMapping("/create/new/post")
+    @PostMapping("/create/new/food")
     public ResponseEntity<?> addNewFood(@RequestBody MenuModel postModel) {
         try {
             return new ResponseEntity(adminServise.addNewFood(postModel), HttpStatus.OK);

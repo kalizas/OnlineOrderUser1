@@ -11,6 +11,8 @@ public class MenuModel {
 
     private String nameFood;
 
+    private String ingredients;
+
     private int price;
 
     private FilialModel filialModel;

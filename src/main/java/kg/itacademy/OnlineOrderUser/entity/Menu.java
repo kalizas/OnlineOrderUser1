@@ -17,6 +17,9 @@ public class Menu {
     @Column(name = "food_name")
     private String foodName;
 
+    @Column(name = "ingredients")
+    private String ingredients;
+
     @Column(name = "price")
     private Integer price;
 
